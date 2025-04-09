@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #2e2f42;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 16px 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* Task 1: Categories */
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#categories .item {
+  background-color: #f6f6fe;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+#categories .item h2 {
+  margin-bottom: 12px;
+}
+
+/* Task 2: Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 24px;
+}
+
+.gallery li {
+  flex-basis: calc((100% - 48px) / 3);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Task 3: Input Hello */
+#name-input {
+  display: block;
+  width: 300px;
+  padding: 8px 16px;
+  margin: 0 auto 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+/* Task 4: Login form */
+.login-form {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.login-form input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.login-form button {
+  padding: 10px 16px;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #3653d9;
+}
+
+/* Task 5: Change Color */
+.widget {
+  max-width: 320px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.widget .change-color {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.widget .change-color:hover {
+  background-color: #3653d9;
+}
+
+.widget .color {
+  font-weight: 700;
+}
